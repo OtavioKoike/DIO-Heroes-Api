@@ -29,6 +29,11 @@ e, em outro terminal, para listagem das tabelas:
  aws dynamodb list-tables --endpoint-url http://localhost:8000
 ```
 
+Para acessar o DIO Heroes API publicada no postman
+```shell script
+https://documenter.getpostman.com/view/14768302/TzJpiKeL
+```
+
 Para acessar o swagger local:
 
 ```shell script
