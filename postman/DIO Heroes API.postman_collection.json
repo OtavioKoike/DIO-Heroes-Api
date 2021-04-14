@@ -1,0 +1,101 @@
+{
+	"info": {
+		"_postman_id": "50ba8e07-2a04-4c68-b022-c9bdc82df70c",
+		"name": "DIO Heroes API",
+		"description": "## API de gerenciamento de Herois realizado duarante o bootcamp Java Inter Develop",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get All Heroes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/heroes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"heroes"
+					]
+				},
+				"description": "Requisição de todos heróis"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Hero By Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/heroes/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"heroes",
+						"1"
+					]
+				},
+				"description": "Requisição de herói por Id"
+			},
+			"response": []
+		},
+		{
+			"name": "Create New Hero",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": \"10\",\n    \"name\": \"Thor\",\n    \"universe\": \"Marvel\",\n    \"films\": 7\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/heroes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"heroes"
+					]
+				},
+				"description": "Criação de novo herói"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Hero By Id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/heroes/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"heroes",
+						"2"
+					]
+				},
+				"description": "Exclusão de herói por id"
+			},
+			"response": []
+		}
+	]
+}
